@@ -32,6 +32,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D2F30F82C415A67006E89DC /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				1D6FB1602C40762F00684036 /* ContentView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		1D2F30F92C415A70006E89DC /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		1D2F30FA2C415A7C006E89DC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1D2F30FB2C415A87006E89DC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		1D6FB1522C40762E00684036 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +80,11 @@
 		1D6FB15D2C40762F00684036 /* Pinch */ = {
 			isa = PBXGroup;
 			children = (
+				1D2F30FB2C415A87006E89DC /* Utility */,
+				1D2F30FA2C415A7C006E89DC /* Extension */,
+				1D2F30F92C415A70006E89DC /* Component */,
+				1D2F30F82C415A67006E89DC /* Screen */,
 				1D6FB15E2C40762F00684036 /* PinchApp.swift */,
-				1D6FB1602C40762F00684036 /* ContentView.swift */,
 				1D6FB1622C40763100684036 /* Assets.xcassets */,
 				1D6FB1642C40763100684036 /* Preview Content */,
 			);
