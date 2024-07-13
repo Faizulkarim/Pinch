@@ -14,7 +14,7 @@ struct ContentView: View {
     @State private var imageOffset = CGSize.zero
     @State private var imageScale = 1.0
     @State private var isDrawerOpen  = false
-
+    
     let pages = pagesData
     private var maxScale: CGFloat = 5
     private var minScale: CGFloat = 1
@@ -25,7 +25,6 @@ struct ContentView: View {
             imageScale = minScale
             imageOffset = .zero
         }
-
     }
     var body: some View {
         //MARK: NAVIGATION STACK
@@ -67,12 +66,11 @@ struct ContentView: View {
                                     resetImageState()
                                 }
                             })
-                    
                     )
                 // MARK: - 2. MAGNIFY  GESTURE
                     .gesture(
                         MagnifyGesture()
-                         
+                        
                             .onChanged { gesture in
                                 
                                 withAnimation(.linear(duration: 1)) {
@@ -85,7 +83,6 @@ struct ContentView: View {
                                     }
                                 }
                             }
-                        
                             .onEnded { _ in
                                 withAnimation(.linear(duration: 1)) {
                                     
@@ -94,11 +91,10 @@ struct ContentView: View {
                                         
                                     } else if imageScale > 5 {
                                         imageScale = maxScale
-                                    }
                                 }
                             }
+                        }
                     )
-
             }
             .navigationTitle("Pinch & zoom")
             .navigationBarTitleDisplayMode(.inline)
@@ -119,9 +115,7 @@ struct ContentView: View {
                     HStack {
                         // SCALE DOWN
                         Button(action: {
-                            
                             withAnimation(.spring) {
-                                
                                 if imageScale > minScale {
                                     imageScale -= 1
                                     
@@ -130,19 +124,15 @@ struct ContentView: View {
                                     }
                                 }
                             }
-                            
                         }) {
                             ControlImageView(systemImage: "minus.magnifyingglass")
                         }
                         
                         // RESET
                         Button(action: {
-                            
                             withAnimation(.spring) {
-                                
                                 if imageScale > minScale {
                                     resetImageState()
-                                    
                                 } else {
                                     imageScale = maxScale
                                 }
@@ -150,7 +140,6 @@ struct ContentView: View {
                         }) {
                             ControlImageView(systemImage: "arrow.up.left.and.down.right.magnifyingglass")
                         }
-                        
                         // SCALE UP
                         Button(action: {
                             withAnimation(.spring) {
@@ -176,10 +165,9 @@ struct ContentView: View {
                 .padding(.bottom, 30)
             }
             
-            
             // MARK: - DRAWER
             .overlay(alignment: .topTrailing) {
-                    HStack(spacing: 12) {
+                HStack(spacing: 12) {
                     // MARK: - DRAWER HANDLE
                     Image(systemName: isDrawerOpen ? "chevron.compact.right" : "chevron.compact.left")
                         .resizable()

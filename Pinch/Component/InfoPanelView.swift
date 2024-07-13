@@ -33,7 +33,7 @@ struct InfoPanelView: View {
                 Text("\(offset.width)")
                 
                 Spacer()
-
+                
                 Image(systemName: "arrow.up.and.down")
                 Text("\(offset.height)")
                 
@@ -48,9 +48,7 @@ struct InfoPanelView: View {
             .animation(.easeOut, value: isInfoPanelVisible)
             
             Spacer()
-
         }
-        
     }
 }
 
