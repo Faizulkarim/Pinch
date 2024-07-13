@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    //MARK: PROPERTY
     @State private var pageIndex = 0
     @State private var isAnimating = false
     @State private var imageOffset = CGSize.zero
@@ -16,8 +17,20 @@ struct ContentView: View {
     let pages = pagesData
     private var maxScale: CGFloat = 5
     private var minScale: CGFloat = 1
+    
+    //MARK: Function
+    func resetImageState() {
+        withAnimation(.spring) {
+            imageScale = minScale
+            imageOffset = .zero
+        }
+
+    }
     var body: some View {
+        //MARK: NAVIGATION STACK
         NavigationStack {
+            
+            // MARK: ZSTACK
             ZStack {
                 Color.clear
                 Image(pages[pageIndex].imageName)
@@ -30,18 +43,31 @@ struct ContentView: View {
                     .opacity(isAnimating ? 1 : 0)
                     .offset(x: imageOffset.width, y: imageOffset.height)
                     .scaleEffect(imageScale)
+                //MARK: TAP GESTURE
                     .onTapGesture(count: 2, perform: {
                         if imageScale == minScale {
                             withAnimation(.spring) {
                                 imageScale = maxScale
                             }
                         }else{
-                            withAnimation(.spring) {
-                                imageScale = minScale
-                                imageOffset = .zero
-                            }
+                            resetImageState()
                         }
                     })
+                //MARK: DRAG GESTURE
+                    .gesture(
+                        DragGesture()
+                            .onChanged({ gester in
+                                withAnimation(.linear(duration: 1)) {
+                                    imageOffset = gester.translation
+                                }
+                            })
+                            .onEnded({ _ in
+                                if imageScale == minScale {
+                                    resetImageState()
+                                }
+                            })
+                    
+                    )
 
             }
             .navigationTitle("Pinch & zoom")
