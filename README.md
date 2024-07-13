@@ -8,8 +8,14 @@ Pinch is an iOS app built with SwiftUI to demonstrate handling multiple gestures
 <img src="https://github.com/user-attachments/assets/30532891-8d19-41f7-87aa-6ec7b95283fe" width="200" />
 <img src="https://github.com/user-attachments/assets/b7011657-6e73-444c-8b9b-87217dfb1214" width="200" />
 
-## Video 
+## Dark Mode
+<img src="https://github.com/user-attachments/assets/82f10af5-c3de-49e1-9f3a-03b7729e0e7d" width="200" />
+<img src="https://github.com/user-attachments/assets/8ac22ade-b366-4501-921b-78e5eae820eb" width="200" />
+<img src="https://github.com/user-attachments/assets/10acc17b-15b4-425c-8530-cf20126b2a08" width="200" />
+<img src="https://github.com/user-attachments/assets/4d541138-5a51-4426-b2ad-4ac3288d8774" width="200" />
 
+## Video 
+https://github.com/user-attachments/assets/fcfe4b53-59d8-4328-b743-183bcdb10d79
 
 ## Features
 
