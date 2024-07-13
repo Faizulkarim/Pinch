@@ -10,6 +10,10 @@
 		1D2F30FE2C42540C006E89DC /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2F30FD2C42540C006E89DC /* PageData.swift */; };
 		1D2F31002C42542A006E89DC /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2F30FF2C42542A006E89DC /* ImageConstants.swift */; };
 		1D2F31032C425460006E89DC /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2F31022C425460006E89DC /* PageModel.swift */; };
+		1D2F31052C428B0C006E89DC /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2F31042C428B0C006E89DC /* InfoPanelView.swift */; };
+		1D2F31072C428D02006E89DC /* ControlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2F31062C428D02006E89DC /* ControlImageView.swift */; };
+		1D2F31092C428DC7006E89DC /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2F31082C428DC7006E89DC /* UIScreen+Extension.swift */; };
+		1D2F310B2C428DE5006E89DC /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2F310A2C428DE5006E89DC /* UIWindow+Extension.swift */; };
 		1D6FB15F2C40762F00684036 /* PinchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6FB15E2C40762F00684036 /* PinchApp.swift */; };
 		1D6FB1612C40762F00684036 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6FB1602C40762F00684036 /* ContentView.swift */; };
 		1D6FB1632C40763100684036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D6FB1622C40763100684036 /* Assets.xcassets */; };
@@ -20,6 +24,10 @@
 		1D2F30FD2C42540C006E89DC /* PageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
 		1D2F30FF2C42542A006E89DC /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
 		1D2F31022C425460006E89DC /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		1D2F31042C428B0C006E89DC /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		1D2F31062C428D02006E89DC /* ControlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlImageView.swift; sourceTree = "<group>"; };
+		1D2F31082C428DC7006E89DC /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		1D2F310A2C428DE5006E89DC /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		1D6FB15B2C40762F00684036 /* Pinch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D6FB15E2C40762F00684036 /* PinchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchApp.swift; sourceTree = "<group>"; };
 		1D6FB1602C40762F00684036 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +57,8 @@
 		1D2F30F92C415A70006E89DC /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				1D2F31042C428B0C006E89DC /* InfoPanelView.swift */,
+				1D2F31062C428D02006E89DC /* ControlImageView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -56,6 +66,8 @@
 		1D2F30FA2C415A7C006E89DC /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1D2F31082C428DC7006E89DC /* UIScreen+Extension.swift */,
+				1D2F310A2C428DE5006E89DC /* UIWindow+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -195,10 +207,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D6FB1612C40762F00684036 /* ContentView.swift in Sources */,
+				1D2F31092C428DC7006E89DC /* UIScreen+Extension.swift in Sources */,
+				1D2F310B2C428DE5006E89DC /* UIWindow+Extension.swift in Sources */,
 				1D2F31032C425460006E89DC /* PageModel.swift in Sources */,
 				1D2F30FE2C42540C006E89DC /* PageData.swift in Sources */,
 				1D6FB15F2C40762F00684036 /* PinchApp.swift in Sources */,
 				1D2F31002C42542A006E89DC /* ImageConstants.swift in Sources */,
+				1D2F31052C428B0C006E89DC /* InfoPanelView.swift in Sources */,
+				1D2F31072C428D02006E89DC /* ControlImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
