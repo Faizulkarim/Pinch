@@ -12,7 +12,10 @@ struct ContentView: View {
     @State private var isAnimating = false
     @State private var imageOffset = CGSize.zero
     @State private var imageScale = 1.0
+
     let pages = pagesData
+    private var maxScale: CGFloat = 5
+    private var minScale: CGFloat = 1
     var body: some View {
         NavigationStack {
             ZStack {
@@ -27,6 +30,18 @@ struct ContentView: View {
                     .opacity(isAnimating ? 1 : 0)
                     .offset(x: imageOffset.width, y: imageOffset.height)
                     .scaleEffect(imageScale)
+                    .onTapGesture(count: 2, perform: {
+                        if imageScale == minScale {
+                            withAnimation(.spring) {
+                                imageScale = maxScale
+                            }
+                        }else{
+                            withAnimation(.spring) {
+                                imageScale = minScale
+                                imageOffset = .zero
+                            }
+                        }
+                    })
 
             }
             .navigationTitle("Pinch & zoom")
