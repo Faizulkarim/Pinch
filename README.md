@@ -13,11 +13,16 @@ Pinch is an iOS app built with SwiftUI to demonstrate handling multiple gestures
 
 ## Features
 
-- Double Tap Gesture: Recognizes and handles double tap actions to trigger specific functionalities.
-- Drag Gesture: Implements draggable elements within the UI, allowing users to move components around the screen.
-- Magnify Gesture: Enables pinch-to-zoom interactions, providing a natural and intuitive way to zoom in and out of content.
-- Long Tap Gesture: Detects long press actions, activating unique responses after a prolonged touch.
-- Animations: Enhances gesture responses with smooth and engaging animations for a more dynamic user experience.
+### Double Tap Gesture:  
+ Recognizes and handles double tap actions to trigger specific functionalities.
+### Drag Gesture: 
+Implements draggable elements within the UI, allowing users to move components around the screen.
+### Magnify Gesture: 
+Enables pinch-to-zoom interactions, providing a natural and intuitive way to zoom in and out of content.
+### Long Tap Gesture: 
+Detects long press actions, activating unique responses after a prolonged touch.
+### Animations: 
+Enhances gesture responses with smooth and engaging animations for a more dynamic user experience.
 
 ## What I Learned
 - Gesture Handling in SwiftUI: Gained a deep understanding of handling multiple gestures in SwiftUI, including the intricacies of combining them seamlessly.
