@@ -25,7 +25,7 @@ https://github.com/user-attachments/assets/fcfe4b53-59d8-4328-b743-183bcdb10d79
 - **Long Tap Gesture:** Detects long press actions, activating unique responses after a prolonged touch.
 - **Animations:** Enhances gesture responses with smooth and engaging animations for a more dynamic user experience.
 
-## What I Learned
+## Learning Points:
 - Gesture Handling in SwiftUI: Gained a deep understanding of handling multiple gestures in SwiftUI, including the intricacies of combining them seamlessly.
 - SwiftUI Animations: Explored various animation techniques to improve user interaction and feedback within the app.
 - User Experience Enhancement: Improved the overall user experience by integrating intuitive gesture-based controls and responsive animations.
