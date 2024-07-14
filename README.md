@@ -30,3 +30,22 @@ https://github.com/user-attachments/assets/fcfe4b53-59d8-4328-b743-183bcdb10d79
 - SwiftUI Animations: Explored various animation techniques to improve user interaction and feedback within the app.
 - User Experience Enhancement: Improved the overall user experience by integrating intuitive gesture-based controls and responsive animations.
 - SwiftUI Framework: Furthered my knowledge and expertise in the SwiftUI framework, strengthening my skills in building modern iOS applications.
+  
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Faizulkarim/Pinch.git
+
+2. Open the project in Xcode.
+3. Build and run the app on your simulator or device.
+
+## Usage
+
+Explore the various SwiftUI components by navigating through the app. Learn how to implement Double Tap Gestures, Drag Gestures, Long Tap gestures, Magnify gestures, animations, and more. This project is designed to be a comprehensive learning tool for SwiftUI development.
+
+## Contribution
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please create an issue or submit a pull request.
+
+
